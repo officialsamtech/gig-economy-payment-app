@@ -2,7 +2,7 @@ import crypto from 'crypto';
 import axios, { AxiosInstance } from 'axios';
 import { Beneficiary } from '@/models/beneficiary';
 import { Payout } from '../models/payout';
-import { PayoutMethod } from '@/models/PayoutMethod';
+import { PayoutMethod } from '@/models/payoutMethod';
 import HttpMethod from 'http-method-enum';
 import config from '../config/config';
 import { logger } from '../utils/logger';

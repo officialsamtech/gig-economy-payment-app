@@ -4,7 +4,7 @@ import { OpenAPI, ResponseSchema } from 'routing-controllers-openapi';
 import { validationMiddleware } from '@/middlewares/validation.middleware';
 import RapydService from '@/services/rapydService';
 import { Payout } from '@/models/payout';
-import { PayoutMethod } from '@/models/PayoutMethod';
+import { PayoutMethod } from '@/models/payoutMethod';
 
 @JsonController('/api')
 export class PayoutController {
