@@ -1,0 +1,23 @@
+import 'dotenv/config';
+import './index';
+import App from './app';
+
+// Import your controllers
+import { IndexController } from '@/controllers/index';
+import { BeneficiaryController } from '@/controllers/beneficiaries';
+import { PayoutController } from '@/controllers/payouts';
+
+import validateEnv from './utils/validateEnv'; // Utility to validate environment variables
+
+// Validate environment variables before starting the app
+validateEnv();
+
+// Initialize the App class and pass in your controllers
+const app = new App([
+    IndexController,
+    BeneficiaryController,
+    PayoutController
+]);
+
+// Start the application
+app.listen();

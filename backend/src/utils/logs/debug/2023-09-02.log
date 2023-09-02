@@ -1,0 +1,370 @@
+2023-09-02 03:48:25 info: =================================
+2023-09-02 03:48:25 info: ======= ENV: development =======
+2023-09-02 03:48:25 info: 🚀 App listening on the port 5000
+2023-09-02 03:48:25 info: =================================
+2023-09-02 03:51:22 info: [0mGET / [32m200[0m 3.133 ms - 2[0m
+2023-09-02 03:57:59 info: =================================
+2023-09-02 03:57:59 info: ======= ENV: development =======
+2023-09-02 03:57:59 info: 🚀 App listening on the port 5000
+2023-09-02 03:57:59 info: =================================
+2023-09-02 04:00:32 error: [POST] /beneficiaries >> StatusCode:: 400, Message:: Unexpected token " in JSON at position 4
+2023-09-02 04:00:32 info: [0mPOST /beneficiaries [33m400[0m 19.200 ms - 55[0m
+2023-09-02 04:00:57 info: [0mPOST /beneficiaries [33m404[0m 2.516 ms - 153[0m
+2023-09-02 04:04:54 error: [POST] /api/beneficiaries >> StatusCode:: 400, Message:: an unknown value was passed to the validate function
+2023-09-02 04:04:54 info: [0mPOST /api/beneficiaries [33m400[0m 9.218 ms - 66[0m
+2023-09-02 04:10:11 error: [POST] /api/beneficiaries >> StatusCode:: 400, Message:: an unknown value was passed to the validate function
+2023-09-02 04:10:11 info: [0mPOST /api/beneficiaries [33m400[0m 1.982 ms - 66[0m
+2023-09-02 04:14:47 info: =================================
+2023-09-02 04:14:47 info: ======= ENV: development =======
+2023-09-02 04:14:47 info: 🚀 App listening on the port 5000
+2023-09-02 04:14:47 info: =================================
+2023-09-02 04:15:40 info: =================================
+2023-09-02 04:15:40 info: ======= ENV: development =======
+2023-09-02 04:15:40 info: 🚀 App listening on the port 5000
+2023-09-02 04:15:40 info: =================================
+2023-09-02 04:17:02 info: =================================
+2023-09-02 04:17:02 info: ======= ENV: development =======
+2023-09-02 04:17:02 info: 🚀 App listening on the port 5000
+2023-09-02 04:17:02 info: =================================
+2023-09-02 04:17:07 error: [POST] /api/beneficiaries >> StatusCode:: 400, Message:: property category should not exist, property bank_name should not exist, payment_type must be a string
+2023-09-02 04:17:07 info: [0mPOST /api/beneficiaries [33m400[0m 44.469 ms - 116[0m
+2023-09-02 04:19:42 info: =================================
+2023-09-02 04:19:42 info: ======= ENV: development =======
+2023-09-02 04:19:42 info: 🚀 App listening on the port 5000
+2023-09-02 04:19:42 info: =================================
+2023-09-02 04:19:46 error: [POST] /api/beneficiaries >> StatusCode:: 400, Message:: payment_type must be a string
+2023-09-02 04:19:46 info: [0mPOST /api/beneficiaries [33m400[0m 46.809 ms - 43[0m
+2023-09-02 04:26:45 info: =================================
+2023-09-02 04:26:45 info: ======= ENV: development =======
+2023-09-02 04:26:45 info: 🚀 App listening on the port 5000
+2023-09-02 04:26:45 info: =================================
+2023-09-02 04:26:49 info: [0mPOST /api/beneficiaries [32m200[0m 1695.034 ms - 610[0m
+2023-09-02 04:32:41 info: [0mGET /api/beneficiaries [32m200[0m 0.982 ms - -[0m
+2023-09-02 04:33:34 info: [0mGET /api/beneficiaries/beneficiary_c957b543d6a5a5932edf2a6023d60f16 [33m404[0m 1.397 ms - 201[0m
+2023-09-02 04:34:36 info: =================================
+2023-09-02 04:34:36 info: ======= ENV: development =======
+2023-09-02 04:34:36 info: 🚀 App listening on the port 5000
+2023-09-02 04:34:36 info: =================================
+2023-09-02 04:34:41 info: =================================
+2023-09-02 04:34:41 info: ======= ENV: development =======
+2023-09-02 04:34:41 info: 🚀 App listening on the port 5000
+2023-09-02 04:34:41 info: =================================
+2023-09-02 04:34:45 info: [0mGET /api/beneficiaries/beneficiary_c957b543d6a5a5932edf2a6023d60f16 [33m404[0m 4.007 ms - 201[0m
+2023-09-02 04:38:22 info: =================================
+2023-09-02 04:38:22 info: ======= ENV: development =======
+2023-09-02 04:38:22 info: 🚀 App listening on the port 5000
+2023-09-02 04:38:22 info: =================================
+2023-09-02 04:38:53 info: [0mGET /api/beneficiaries/beneficiary_c957b543d6a5a5932edf2a6023d60f16 [33m404[0m 4.521 ms - 201[0m
+2023-09-02 04:40:06 info: =================================
+2023-09-02 04:40:06 info: ======= ENV: development =======
+2023-09-02 04:40:06 info: 🚀 App listening on the port 5000
+2023-09-02 04:40:06 info: =================================
+2023-09-02 04:40:10 info: [0mGET /api/beneficiaries/beneficiary_c957b543d6a5a5932edf2a6023d60f16 [33m404[0m 4.248 ms - 201[0m
+2023-09-02 04:41:14 info: =================================
+2023-09-02 04:41:14 info: ======= ENV: development =======
+2023-09-02 04:41:14 info: 🚀 App listening on the port 5000
+2023-09-02 04:41:14 info: =================================
+2023-09-02 04:41:18 info: [0mGET /api/beneficiaries/beneficiary_c957b543d6a5a5932edf2a6023d60f16 [33m404[0m 3.784 ms - 201[0m
+2023-09-02 04:44:32 info: =================================
+2023-09-02 04:44:32 info: ======= ENV: development =======
+2023-09-02 04:44:32 info: 🚀 App listening on the port 5000
+2023-09-02 04:44:32 info: =================================
+2023-09-02 04:44:38 error: [GET] /api/beneficiaries/beneficiary_c957b543d6a5a5932edf2a6023d60f16 >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 04:44:38 info: [0mGET /api/beneficiaries/beneficiary_c957b543d6a5a5932edf2a6023d60f16 [33m400[0m 2812.466 ms - 359[0m
+2023-09-02 04:47:59 info: =================================
+2023-09-02 04:47:59 info: ======= ENV: development =======
+2023-09-02 04:47:59 info: 🚀 App listening on the port 5000
+2023-09-02 04:47:59 info: =================================
+2023-09-02 04:48:41 error: [GET] /api/beneficiaries/beneficiary_c957b543d6a5a5932edf2a6023d60f16 >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 04:48:41 info: [0mGET /api/beneficiaries/beneficiary_c957b543d6a5a5932edf2a6023d60f16 [33m400[0m 2195.472 ms - 359[0m
+2023-09-02 04:52:48 info: =================================
+2023-09-02 04:52:48 info: ======= ENV: development =======
+2023-09-02 04:52:48 info: 🚀 App listening on the port 5000
+2023-09-02 04:52:48 info: =================================
+2023-09-02 04:52:54 info: [0mGET /api/beneficiaries/beneficiary_c957b543d6a5a5932edf2a6023d60f16 [32m200[0m 1920.647 ms - 610[0m
+2023-09-02 04:53:31 info: =================================
+2023-09-02 04:53:31 info: ======= ENV: development =======
+2023-09-02 04:53:31 info: 🚀 App listening on the port 5000
+2023-09-02 04:53:31 info: =================================
+2023-09-02 04:56:17 info: =================================
+2023-09-02 04:56:17 info: ======= ENV: development =======
+2023-09-02 04:56:17 info: 🚀 App listening on the port 5000
+2023-09-02 04:56:17 info: =================================
+2023-09-02 05:12:25 error: [POST] /api/payouts >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 05:12:25 info: [0mPOST /api/payouts [33m400[0m 1745.271 ms - 658[0m
+2023-09-02 05:19:49 info: =================================
+2023-09-02 05:19:49 info: ======= ENV: development =======
+2023-09-02 05:19:49 info: 🚀 App listening on the port 5000
+2023-09-02 05:19:49 info: =================================
+2023-09-02 05:20:01 info: =================================
+2023-09-02 05:20:01 info: ======= ENV: development =======
+2023-09-02 05:20:01 info: 🚀 App listening on the port 5000
+2023-09-02 05:20:01 info: =================================
+2023-09-02 05:20:09 info: =================================
+2023-09-02 05:20:09 info: ======= ENV: development =======
+2023-09-02 05:20:09 info: 🚀 App listening on the port 5000
+2023-09-02 05:20:09 info: =================================
+2023-09-02 05:20:12 info: =================================
+2023-09-02 05:20:12 info: ======= ENV: development =======
+2023-09-02 05:20:12 info: 🚀 App listening on the port 5000
+2023-09-02 05:20:12 info: =================================
+2023-09-02 05:21:01 info: =================================
+2023-09-02 05:21:01 info: ======= ENV: development =======
+2023-09-02 05:21:01 info: 🚀 App listening on the port 5000
+2023-09-02 05:21:01 info: =================================
+2023-09-02 05:21:03 info: =================================
+2023-09-02 05:21:03 info: ======= ENV: development =======
+2023-09-02 05:21:03 info: 🚀 App listening on the port 5000
+2023-09-02 05:21:03 info: =================================
+2023-09-02 05:21:18 info: =================================
+2023-09-02 05:21:18 info: ======= ENV: development =======
+2023-09-02 05:21:18 info: 🚀 App listening on the port 5000
+2023-09-02 05:21:18 info: =================================
+2023-09-02 05:21:32 info: =================================
+2023-09-02 05:21:32 info: ======= ENV: development =======
+2023-09-02 05:21:32 info: 🚀 App listening on the port 5000
+2023-09-02 05:21:32 info: =================================
+2023-09-02 05:21:38 info: =================================
+2023-09-02 05:21:38 info: ======= ENV: development =======
+2023-09-02 05:21:38 info: 🚀 App listening on the port 5000
+2023-09-02 05:21:38 info: =================================
+2023-09-02 05:21:44 info: =================================
+2023-09-02 05:21:44 info: ======= ENV: development =======
+2023-09-02 05:21:44 info: 🚀 App listening on the port 5000
+2023-09-02 05:21:44 info: =================================
+2023-09-02 05:22:24 info: =================================
+2023-09-02 05:22:24 info: ======= ENV: development =======
+2023-09-02 05:22:24 info: 🚀 App listening on the port 5000
+2023-09-02 05:22:24 info: =================================
+2023-09-02 05:25:30 info: =================================
+2023-09-02 05:25:30 info: ======= ENV: development =======
+2023-09-02 05:25:30 info: 🚀 App listening on the port 5000
+2023-09-02 05:25:30 info: =================================
+2023-09-02 05:25:41 info: =================================
+2023-09-02 05:25:41 info: ======= ENV: development =======
+2023-09-02 05:25:41 info: 🚀 App listening on the port 5000
+2023-09-02 05:25:41 info: =================================
+2023-09-02 05:26:16 info: =================================
+2023-09-02 05:26:16 info: ======= ENV: development =======
+2023-09-02 05:26:16 info: 🚀 App listening on the port 5000
+2023-09-02 05:26:16 info: =================================
+2023-09-02 05:30:58 info: =================================
+2023-09-02 05:30:58 info: ======= ENV: development =======
+2023-09-02 05:30:58 info: 🚀 App listening on the port 5000
+2023-09-02 05:30:58 info: =================================
+2023-09-02 05:46:58 info: =================================
+2023-09-02 05:46:58 info: ======= ENV: development =======
+2023-09-02 05:46:58 info: 🚀 App listening on the port 5000
+2023-09-02 05:46:58 info: =================================
+2023-09-02 05:47:44 info: =================================
+2023-09-02 05:47:44 info: ======= ENV: development =======
+2023-09-02 05:47:44 info: 🚀 App listening on the port 5000
+2023-09-02 05:47:44 info: =================================
+2023-09-02 05:47:56 info: =================================
+2023-09-02 05:47:56 info: ======= ENV: development =======
+2023-09-02 05:47:56 info: 🚀 App listening on the port 5000
+2023-09-02 05:47:56 info: =================================
+2023-09-02 05:48:06 info: =================================
+2023-09-02 05:48:06 info: ======= ENV: development =======
+2023-09-02 05:48:06 info: 🚀 App listening on the port 5000
+2023-09-02 05:48:06 info: =================================
+2023-09-02 05:48:12 info: =================================
+2023-09-02 05:48:12 info: ======= ENV: development =======
+2023-09-02 05:48:12 info: 🚀 App listening on the port 5000
+2023-09-02 05:48:12 info: =================================
+2023-09-02 05:48:59 info: =================================
+2023-09-02 05:48:59 info: ======= ENV: development =======
+2023-09-02 05:48:59 info: 🚀 App listening on the port 5000
+2023-09-02 05:48:59 info: =================================
+2023-09-02 05:49:05 info: =================================
+2023-09-02 05:49:05 info: ======= ENV: development =======
+2023-09-02 05:49:05 info: 🚀 App listening on the port 5000
+2023-09-02 05:49:05 info: =================================
+2023-09-02 05:57:00 info: =================================
+2023-09-02 05:57:00 info: ======= ENV: development =======
+2023-09-02 05:57:00 info: 🚀 App listening on the port 5000
+2023-09-02 05:57:00 info: =================================
+2023-09-02 06:06:23 info: =================================
+2023-09-02 06:06:23 info: ======= ENV: development =======
+2023-09-02 06:06:23 info: 🚀 App listening on the port 5000
+2023-09-02 06:06:23 info: =================================
+2023-09-02 06:10:10 info: =================================
+2023-09-02 06:10:10 info: ======= ENV: development =======
+2023-09-02 06:10:10 info: 🚀 App listening on the port 5000
+2023-09-02 06:10:10 info: =================================
+2023-09-02 06:10:49 info: =================================
+2023-09-02 06:10:49 info: ======= ENV: development =======
+2023-09-02 06:10:49 info: 🚀 App listening on the port 5000
+2023-09-02 06:10:49 info: =================================
+2023-09-02 06:11:07 info: =================================
+2023-09-02 06:11:07 info: ======= ENV: development =======
+2023-09-02 06:11:07 info: 🚀 App listening on the port 5000
+2023-09-02 06:11:07 info: =================================
+2023-09-02 06:11:46 info: =================================
+2023-09-02 06:11:46 info: ======= ENV: development =======
+2023-09-02 06:11:46 info: 🚀 App listening on the port 5000
+2023-09-02 06:11:46 info: =================================
+2023-09-02 06:13:35 info: [0mGET /api/payoutMethods?usd [32m200[0m 2261.181 ms - -[0m
+2023-09-02 06:14:28 info: [0mGET /api/payoutMethods?cad [32m200[0m 1317.992 ms - -[0m
+2023-09-02 06:28:55 info: =================================
+2023-09-02 06:28:55 info: ======= ENV: development =======
+2023-09-02 06:28:55 info: 🚀 App listening on the port 5000
+2023-09-02 06:28:55 info: =================================
+2023-09-02 06:30:21 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 06:30:21 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=*&sender_currency=USD&sender_entity_type=individual&beneficiary_entity_type=individual&payout_amount=3000 [33m400[0m 1441.664 ms - 381[0m
+2023-09-02 06:33:02 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 06:33:02 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=*&sender_currency=USD&sender_entity_type=individual&beneficiary_entity_type=individual&payout_amount=3000&payout_currency=USD [33m400[0m 1251.815 ms - 381[0m
+2023-09-02 06:34:39 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 06:34:39 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=*&sender_currency=USD&sender_entity_type=individual&beneficiary_entity_type=individual&payout_amount=3000&payout_currency=USD&beneficiary_country=ae [33m400[0m 717.204 ms - 381[0m
+2023-09-02 11:49:30 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 11:49:30 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=*&sender_currency=USD&beneficiary_country=ae&payout_currency=USD&sender_entity_type=individual&beneficiary_entity_type=individual&payout_amount=3000 [33m400[0m 1793.711 ms - 381[0m
+2023-09-02 11:50:52 info: =================================
+2023-09-02 11:50:52 info: ======= ENV: development =======
+2023-09-02 11:50:52 info: 🚀 App listening on the port 5000
+2023-09-02 11:50:52 info: =================================
+2023-09-02 11:51:00 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 11:51:00 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=*&sender_currency=USD&beneficiary_country=ae&payout_currency=USD&sender_entity_type=individual&beneficiary_entity_type=individual&payout_amount=3000 [33m400[0m 1222.795 ms - 381[0m
+2023-09-02 11:51:41 info: =================================
+2023-09-02 11:51:41 info: ======= ENV: development =======
+2023-09-02 11:51:41 info: 🚀 App listening on the port 5000
+2023-09-02 11:51:41 info: =================================
+2023-09-02 11:51:46 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 11:51:46 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=*&sender_currency=USD&beneficiary_country=ae&payout_currency=USD&sender_entity_type=individual&beneficiary_entity_type=individual&payout_amount=3000 [33m400[0m 1180.379 ms - 381[0m
+2023-09-02 12:12:17 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 12:12:17 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=CAD&sender_currency=USD&beneficiary_country=ae&payout_currency=USD&sender_entity_type=individual&beneficiary_entity_type=individual&payout_amount=3000 [33m400[0m 1643.251 ms - 381[0m
+2023-09-02 12:16:15 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 12:16:15 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=PH&sender_currency=USD&beneficiary_country=MX&payout_currency=MXN&sender_entity_type=company&beneficiary_entity_type=individual&payout_amount=251 [33m400[0m 1292.851 ms - 381[0m
+2023-09-02 12:19:40 info: =================================
+2023-09-02 12:19:40 info: ======= ENV: development =======
+2023-09-02 12:19:40 info: 🚀 App listening on the port 5000
+2023-09-02 12:19:40 info: =================================
+2023-09-02 12:21:37 info: =================================
+2023-09-02 12:21:37 info: ======= ENV: development =======
+2023-09-02 12:21:37 info: 🚀 App listening on the port 5000
+2023-09-02 12:21:37 info: =================================
+2023-09-02 12:22:40 info: =================================
+2023-09-02 12:22:40 info: ======= ENV: development =======
+2023-09-02 12:22:40 info: 🚀 App listening on the port 5000
+2023-09-02 12:22:40 info: =================================
+2023-09-02 12:22:59 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 12:22:59 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=PH&sender_currency=USD&beneficiary_country=MX&payout_currency=MXN&sender_entity_type=company&beneficiary_entity_type=individual&payout_amount=251 [33m400[0m 2092.308 ms - 381[0m
+2023-09-02 12:23:29 info: =================================
+2023-09-02 12:23:29 info: ======= ENV: development =======
+2023-09-02 12:23:29 info: 🚀 App listening on the port 5000
+2023-09-02 12:23:29 info: =================================
+2023-09-02 12:23:33 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 12:23:33 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=PH&sender_currency=USD&beneficiary_country=MX&payout_currency=MXN&sender_entity_type=company&beneficiary_entity_type=individual&payout_amount=251 [33m400[0m 974.067 ms - 381[0m
+2023-09-02 12:33:52 info: =================================
+2023-09-02 12:33:52 info: ======= ENV: development =======
+2023-09-02 12:33:52 info: 🚀 App listening on the port 5000
+2023-09-02 12:33:52 info: =================================
+2023-09-02 12:34:00 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 12:34:00 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=PH&sender_currency=USD&beneficiary_country=MX&payout_currency=MXN&sender_entity_type=company&beneficiary_entity_type=individual&payout_amount=251 [33m400[0m 1517.261 ms - 381[0m
+2023-09-02 12:35:44 info: =================================
+2023-09-02 12:35:44 info: ======= ENV: development =======
+2023-09-02 12:35:44 info: 🚀 App listening on the port 5000
+2023-09-02 12:35:44 info: =================================
+2023-09-02 12:49:43 info: =================================
+2023-09-02 12:49:43 info: ======= ENV: development =======
+2023-09-02 12:49:43 info: 🚀 App listening on the port 5000
+2023-09-02 12:49:43 info: =================================
+2023-09-02 13:00:34 info: =================================
+2023-09-02 13:00:34 info: ======= ENV: development =======
+2023-09-02 13:00:34 info: 🚀 App listening on the port 5000
+2023-09-02 13:00:34 info: =================================
+2023-09-02 13:00:47 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 500, Message:: Invalid queries, check 'errors' property for more info.
+2023-09-02 13:00:47 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=PH&sender_currency=USD&beneficiary_country=MX&payout_currency=MXN&sender_entity_type=company&beneficiary_entity_type=individual&payout_amount=251 [31m500[0m 18.187 ms - 69[0m
+2023-09-02 13:03:29 info: =================================
+2023-09-02 13:03:29 info: ======= ENV: development =======
+2023-09-02 13:03:29 info: 🚀 App listening on the port 5000
+2023-09-02 13:03:29 info: =================================
+2023-09-02 13:03:32 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 500, Message:: Invalid queries, check 'errors' property for more info.
+2023-09-02 13:03:32 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=PH&sender_currency=USD&beneficiary_country=MX&payout_currency=MXN&sender_entity_type=company&beneficiary_entity_type=individual&payout_amount=251 [31m500[0m 22.502 ms - 69[0m
+2023-09-02 13:04:22 info: =================================
+2023-09-02 13:04:22 info: ======= ENV: development =======
+2023-09-02 13:04:22 info: 🚀 App listening on the port 5000
+2023-09-02 13:04:22 info: =================================
+2023-09-02 13:04:25 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 500, Message:: Invalid queries, check 'errors' property for more info.
+2023-09-02 13:04:25 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=PH&sender_currency=USD&beneficiary_country=MX&payout_currency=MXN&sender_entity_type=company&beneficiary_entity_type=individual&payout_amount=251 [31m500[0m 16.844 ms - 69[0m
+2023-09-02 18:55:57 info: =================================
+2023-09-02 18:55:57 info: ======= ENV: development =======
+2023-09-02 18:55:57 info: 🚀 App listening on the port 5000
+2023-09-02 18:55:57 info: =================================
+2023-09-02 19:02:04 info: =================================
+2023-09-02 19:02:04 info: ======= ENV: development =======
+2023-09-02 19:02:04 info: 🚀 App listening on the port 5000
+2023-09-02 19:02:04 info: =================================
+2023-09-02 19:02:18 info: =================================
+2023-09-02 19:02:18 info: ======= ENV: development =======
+2023-09-02 19:02:18 info: 🚀 App listening on the port 5000
+2023-09-02 19:02:18 info: =================================
+2023-09-02 19:02:35 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 500, Message:: Invalid queries, check 'errors' property for more info.
+2023-09-02 19:02:36 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=PH&sender_currency=USD&beneficiary_country=MX&payout_currency=MXN&sender_entity_type=company&beneficiary_entity_type=individual&payout_amount=251 [31m500[0m 30.401 ms - 69[0m
+2023-09-02 19:04:09 info: =================================
+2023-09-02 19:04:09 info: ======= ENV: development =======
+2023-09-02 19:04:09 info: 🚀 App listening on the port 5000
+2023-09-02 19:04:09 info: =================================
+2023-09-02 19:05:10 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 500, Message:: Invalid queries, check 'errors' property for more info.
+2023-09-02 19:05:10 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=PH&sender_currency=USD&beneficiary_country=MX&payout_currency=MXN&sender_entity_type=company&beneficiary_entity_type=individual&payout_amount=251 [31m500[0m 26.926 ms - 69[0m
+2023-09-02 19:28:34 info: =================================
+2023-09-02 19:28:34 info: ======= ENV: development =======
+2023-09-02 19:28:34 info: 🚀 App listening on the port 5000
+2023-09-02 19:28:34 info: =================================
+2023-09-02 19:29:41 info: =================================
+2023-09-02 19:29:41 info: ======= ENV: development =======
+2023-09-02 19:29:41 info: 🚀 App listening on the port 5000
+2023-09-02 19:29:41 info: =================================
+2023-09-02 19:31:15 info: =================================
+2023-09-02 19:31:15 info: ======= ENV: development =======
+2023-09-02 19:31:15 info: 🚀 App listening on the port 5000
+2023-09-02 19:31:15 info: =================================
+2023-09-02 19:38:14 info: =================================
+2023-09-02 19:38:14 info: ======= ENV: development =======
+2023-09-02 19:38:14 info: 🚀 App listening on the port 5000
+2023-09-02 19:38:14 info: =================================
+2023-09-02 19:38:39 info: =================================
+2023-09-02 19:38:39 info: ======= ENV: development =======
+2023-09-02 19:38:39 info: 🚀 App listening on the port 5000
+2023-09-02 19:38:39 info: =================================
+2023-09-02 19:45:34 info: =================================
+2023-09-02 19:45:34 info: ======= ENV: development =======
+2023-09-02 19:45:34 info: 🚀 App listening on the port 5000
+2023-09-02 19:45:34 info: =================================
+2023-09-02 19:50:05 info: =================================
+2023-09-02 19:50:05 info: ======= ENV: development =======
+2023-09-02 19:50:05 info: 🚀 App listening on the port 5000
+2023-09-02 19:50:05 info: =================================
+2023-09-02 19:50:53 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 500, Message:: Invalid queries, check 'errors' property for more info.
+2023-09-02 19:50:53 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=PH&sender_currency=USD&beneficiary_country=MX&payout_currency=MXN&sender_entity_type=company&beneficiary_entity_type=individual&payout_amount=251 [31m500[0m 32.493 ms - 69[0m
+2023-09-02 19:50:54 error: [GET] /api/payoutMethods/ae_general_bank/required_fields >> StatusCode:: 500, Message:: Invalid queries, check 'errors' property for more info.
+2023-09-02 19:50:54 info: [0mGET /api/payoutMethods/ae_general_bank/required_fields?sender_country=PH&sender_currency=USD&beneficiary_country=MX&payout_currency=MXN&sender_entity_type=company&beneficiary_entity_type=individual&payout_amount=251 [31m500[0m 3.923 ms - 69[0m
+2023-09-02 19:52:27 info: =================================
+2023-09-02 19:52:27 info: ======= ENV: development =======
+2023-09-02 19:52:27 info: 🚀 App listening on the port 5000
+2023-09-02 19:52:27 info: =================================
+2023-09-02 19:52:36 error: [GET] /api/payoutMethods >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 19:52:36 info: [0mGET /api/payoutMethods?cad [33m400[0m 2017.883 ms - 392[0m
+2023-09-02 19:52:52 error: [GET] /api/payoutMethods >> StatusCode:: 400, Message:: [object Object]
+2023-09-02 19:52:52 info: [0mGET /api/payoutMethods?USD [33m400[0m 775.198 ms - 392[0m
+2023-09-02 19:53:03 info: [0mGET /api/beneficiaries/beneficiary_c957b543d6a5a5932edf2a6023d60f16 [32m200[0m 1187.569 ms - 610[0m
+2023-09-02 19:53:48 info: =================================
+2023-09-02 19:53:48 info: ======= ENV: development =======
+2023-09-02 19:53:48 info: 🚀 App listening on the port 5000
+2023-09-02 19:53:48 info: =================================
+2023-09-02 19:56:01 info: =================================
+2023-09-02 19:56:01 info: ======= ENV: development =======
+2023-09-02 19:56:01 info: 🚀 App listening on the port 5000
+2023-09-02 19:56:01 info: =================================
+2023-09-02 19:56:29 info: =================================
+2023-09-02 19:56:29 info: ======= ENV: development =======
+2023-09-02 19:56:29 info: 🚀 App listening on the port 5000
+2023-09-02 19:56:29 info: =================================
+2023-09-02 19:56:48 info: =================================
+2023-09-02 19:56:48 info: ======= ENV: development =======
+2023-09-02 19:56:48 info: 🚀 App listening on the port 5000
+2023-09-02 19:56:48 info: =================================
+2023-09-02 19:57:46 info: [0mGET /api/payoutMethods?payout_currency=USD [32m200[0m 2337.151 ms - -[0m
+2023-09-02 19:59:28 info: =================================
+2023-09-02 19:59:28 info: ======= ENV: development =======
+2023-09-02 19:59:28 info: 🚀 App listening on the port 5000
+2023-09-02 19:59:28 info: =================================

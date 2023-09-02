@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/mac/Desktop/sammy23/gig-economy-payment-app/backend/src/utils/logs/error/.c738c3922b14a1173ab8c08edfedc52ce6b11bfc-audit.json",
+    "files": [
+        {
+            "date": 1693622851283,
+            "name": "/Users/mac/Desktop/sammy23/gig-economy-payment-app/backend/src/utils/logs/error/2023-09-02.log",
+            "hash": "646a79dc592712230f3400976521eae88cb1ebb636b46a6069b43ed3c8f1d5ff"
+        }
+    ],
+    "hashType": "sha256"
+}
