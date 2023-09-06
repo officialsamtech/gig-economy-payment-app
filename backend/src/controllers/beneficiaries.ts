@@ -4,7 +4,6 @@ import { validationMiddleware } from '@/middlewares/validation.middleware';
 import RapydService from '@/services/rapydService';
 import { Beneficiary } from '@/models/beneficiary';
 
-console.log('BeneficiaryController');
 @JsonController('/api')
 export class BeneficiaryController {
 
