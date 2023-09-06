@@ -1,7 +1,7 @@
 import { Post, Req, HeaderParam, Body, JsonController } from 'routing-controllers';
 import { OpenAPI } from 'routing-controllers-openapi';
 
-import RapydService from '../services/rapydService';
+import RapydService from '@/services/rapydService';
 import { Request } from 'express';
 import { HttpException } from '@/exceptions/HttpException';
 import webhookEventService from '@/services/webhookEventService';
