@@ -6,6 +6,7 @@ import App from './app';
 import { IndexController } from '@/controllers/index';
 import { BeneficiaryController } from '@/controllers/beneficiaries';
 import { PayoutController } from '@/controllers/payouts';
+import { WebhookEventController } from '@/controllers/webhook';
 
 import validateEnv from './utils/validateEnv'; // Utility to validate environment variables
 
@@ -16,8 +17,10 @@ validateEnv();
 const app = new App([
     IndexController,
     BeneficiaryController,
-    PayoutController
+    PayoutController,
+    WebhookEventController
 ]);
+
 
 // Start the application
 app.listen();

@@ -1,4 +1,4 @@
-import { WebhookEvent } from "../models/webhookEvent";
+import { EventType, WebhookEvent } from "@/models/webhookEvent";
 
 class WebhookEventService {
     private static _instance: WebhookEventService;
@@ -12,7 +12,7 @@ class WebhookEventService {
         return this._instance || (this._instance = new this());
     }
 
-    public tryAddEvent(id: string, eventType: 'completed' | 'created' | 'canceled' | 'expired', data: any): boolean {
+    public tryAddEvent(id: string, eventType: EventType, data: any): boolean {
         if (this.events[id]) return false;
         this.events[id] = new WebhookEvent(id, eventType, data);
         return true;

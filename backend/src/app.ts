@@ -91,8 +91,8 @@ class App {
                 },
             },
             info: {
-                description: 'Generated with `routing-controllers-openapi`',
-                title: 'A sample-rapyd app API',
+                description: 'Generated with `routing-controllers-openapi`. Features include beneficiary management, payout creation, and webhook integrations for real-time updates',
+                title: 'Sample Rapyd Disburse App API',
                 version: '1.0.0',
             },
         });

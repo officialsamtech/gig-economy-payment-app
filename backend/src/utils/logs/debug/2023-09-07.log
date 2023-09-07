@@ -1,0 +1,75 @@
+2023-09-07 05:50:15 info: [0mPOST /api/beneficiaries [32m200[0m 1381.167 ms - 617[0m
+2023-09-07 05:50:15 info: [0mPOST / [33m404[0m 3.067 ms - 140[0m
+2023-09-07 05:50:28 info: =================================
+2023-09-07 05:50:28 info: ======= ENV: development =======
+2023-09-07 05:50:28 info: 🚀 App listening on the port 5000
+2023-09-07 05:50:28 info: =================================
+2023-09-07 05:55:30 info: [0mPOST /api/beneficiaries [32m200[0m 1560.102 ms - 617[0m
+2023-09-07 05:55:30 info: [0mPOST /api/webhook [33m404[0m 3.018 ms - 151[0m
+2023-09-07 06:04:04 info: =================================
+2023-09-07 06:04:04 info: ======= ENV: development =======
+2023-09-07 06:04:04 info: 🚀 App listening on the port 5000
+2023-09-07 06:04:04 info: =================================
+2023-09-07 06:04:55 info: =================================
+2023-09-07 06:04:55 info: ======= ENV: development =======
+2023-09-07 06:04:55 info: 🚀 App listening on the port 5000
+2023-09-07 06:04:55 info: =================================
+2023-09-07 06:22:38 info: =================================
+2023-09-07 06:22:38 info: ======= ENV: development =======
+2023-09-07 06:22:38 info: 🚀 App listening on the port 5000
+2023-09-07 06:22:38 info: =================================
+2023-09-07 06:24:11 info: =================================
+2023-09-07 06:24:11 info: ======= ENV: development =======
+2023-09-07 06:24:11 info: 🚀 App listening on the port 5000
+2023-09-07 06:24:11 info: =================================
+2023-09-07 06:25:54 info: [0mGET /api/webhook/events [32m200[0m 4.999 ms - 2[0m
+2023-09-07 06:27:11 info: [0mPOST /api/beneficiaries [32m200[0m 1534.086 ms - 619[0m
+2023-09-07 06:27:11 error: [POST] /api/webhook >> StatusCode:: 401, Message:: Signature not valid
+2023-09-07 06:27:11 info: [0mPOST /api/webhook [33m401[0m 16.013 ms - 33[0m
+2023-09-07 06:39:40 info: =================================
+2023-09-07 06:39:40 info: ======= ENV: development =======
+2023-09-07 06:39:40 info: 🚀 App listening on the port 5000
+2023-09-07 06:39:40 info: =================================
+2023-09-07 06:40:00 info: [0mPOST /api/payouts [32m200[0m 3141.855 ms - -[0m
+2023-09-07 06:40:00 error: [POST] /api/webhook >> StatusCode:: 401, Message:: Signature not valid
+2023-09-07 06:40:00 info: [0mPOST /api/webhook [33m401[0m 13.721 ms - 33[0m
+2023-09-07 06:40:00 error: [POST] /api/webhook >> StatusCode:: 401, Message:: Signature not valid
+2023-09-07 06:40:00 info: [0mPOST /api/webhook [33m401[0m 2.289 ms - 33[0m
+2023-09-07 06:48:17 info: =================================
+2023-09-07 06:48:17 info: ======= ENV: development =======
+2023-09-07 06:48:17 info: 🚀 App listening on the port 5000
+2023-09-07 06:48:17 info: =================================
+2023-09-07 06:48:50 info: =================================
+2023-09-07 06:48:50 info: ======= ENV: development =======
+2023-09-07 06:48:50 info: 🚀 App listening on the port 5000
+2023-09-07 06:48:50 info: =================================
+2023-09-07 06:50:49 info: [0mPOST /api/payouts [32m200[0m 2999.187 ms - -[0m
+2023-09-07 06:50:49 error: [POST] /api/webhook >> StatusCode:: 401, Message:: Signature not valid
+2023-09-07 06:50:49 info: [0mPOST /api/webhook [33m401[0m 22.949 ms - 33[0m
+2023-09-07 06:50:49 error: [POST] /api/webhook >> StatusCode:: 401, Message:: Signature not valid
+2023-09-07 06:50:49 info: [0mPOST /api/webhook [33m401[0m 2.244 ms - 33[0m
+2023-09-07 06:55:29 info: =================================
+2023-09-07 06:55:29 info: ======= ENV: development =======
+2023-09-07 06:55:29 info: 🚀 App listening on the port 5000
+2023-09-07 06:55:29 info: =================================
+2023-09-07 06:55:47 info: [0mPOST /api/payouts [32m200[0m 3059.177 ms - -[0m
+2023-09-07 06:55:47 info: [0mPOST /api/webhook [32m200[0m 2.593 ms - 4[0m
+2023-09-07 06:55:47 info: [0mPOST /api/webhook [32m200[0m 1.746 ms - 4[0m
+2023-09-07 07:16:26 info: [0mGET /api/webhook/events [32m200[0m 32.811 ms - -[0m
+2023-09-07 08:16:24 info: [0mGET /api/docs [36m301[0m 10.723 ms - 183[0m
+2023-09-07 08:16:24 info: [0mGET /api/docs/ [32m200[0m 14.024 ms - -[0m
+2023-09-07 08:16:24 info: [0mGET /api/docs/swagger-ui-init.js [32m200[0m 30.859 ms - -[0m
+2023-09-07 08:16:25 info: [0mGET /api/docs/swagger-ui.css [32m200[0m 332.891 ms - -[0m
+2023-09-07 08:16:25 info: [0mGET /api/docs/swagger-ui-standalone-preset.js [32m200[0m 101.781 ms - -[0m
+2023-09-07 08:16:25 info: [0mGET /api/docs/swagger-ui-bundle.js [32m200[0m 280.653 ms - -[0m
+2023-09-07 08:16:33 info: [0mGET /api/docs/favicon-32x32.png [32m200[0m 2.228 ms - 628[0m
+2023-09-07 08:23:09 info: =================================
+2023-09-07 08:23:09 info: ======= ENV: development =======
+2023-09-07 08:23:09 info: 🚀 App listening on the port 5000
+2023-09-07 08:23:09 info: =================================
+2023-09-07 08:23:10 info: [0mGET /api/docs/ [36m304[0m 11.135 ms - -[0m
+2023-09-07 08:23:10 info: [0mGET /api/docs/swagger-ui.css [36m304[0m 34.946 ms - -[0m
+2023-09-07 08:23:10 info: [0mGET /api/docs/swagger-ui-bundle.js [36m304[0m 29.493 ms - -[0m
+2023-09-07 08:23:10 info: [0mGET /api/docs/swagger-ui-standalone-preset.js [36m304[0m 415.569 ms - -[0m
+2023-09-07 08:23:11 info: [0mGET /api/docs/swagger-ui-init.js [32m200[0m 412.148 ms - -[0m
+2023-09-07 08:23:15 info: [0mGET /api/docs/favicon-32x32.png [36m304[0m 9.986 ms - -[0m

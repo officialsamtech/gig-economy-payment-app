@@ -203,7 +203,7 @@ class RapydService {
             }
 
             const toSign = url + salt + timestamp + this._accessKey + this._secretKey + bodyString;
-            logger.log('toSign', toSign)
+            // console.log('toSign', toSign);
 
             return this.hashSignature(toSign, this._secretKey);
         } catch (error) {

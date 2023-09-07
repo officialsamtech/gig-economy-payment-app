@@ -1,12 +1,21 @@
-import { Post, Req, HeaderParam, Body, JsonController } from 'routing-controllers';
-import { OpenAPI } from 'routing-controllers-openapi';
-
+import { Post, Req, HeaderParam, Body, JsonController, Get } from 'routing-controllers';
+import { OpenAPI, ResponseSchema } from 'routing-controllers-openapi';
+import { WebhookEvent } from '@/models/webhookEvent';
 import RapydService from '@/services/rapydService';
 import { Request } from 'express';
 import { HttpException } from '@/exceptions/HttpException';
 import webhookEventService from '@/services/webhookEventService';
 @JsonController('/api')
 export class WebhookEventController {
+
+    @Get('/webhook/events')
+    @OpenAPI({ summary: 'Return a list of events' })
+    @ResponseSchema(WebhookEvent, { isArray: true })
+    async getEvents() {
+        const events = webhookEventService.getAllEvents();
+
+        return events;
+    }
 
     @Post('/webhook')
     @OpenAPI({ summary: 'Saves triggered rapyd actions' })
@@ -18,7 +27,8 @@ export class WebhookEventController {
         @Body() body: any,
     ) {
         const rapydService = new RapydService();
-        const url = `${request.protocol}://${request.hostname}${request.path}`;
+        const url = `https://${request.hostname}${request.path}`;
+        console.log('url', url)
         if (!rapydService.authWebhookRequest(signature, url, salt, timestamp, body)) {
             throw new HttpException(401, 'Signature not valid');
         }
