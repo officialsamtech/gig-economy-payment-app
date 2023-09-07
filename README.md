@@ -12,25 +12,26 @@ This project serves as a backend API for a gig economy payment application. It l
   - [Installation](#installation)
   - [Usage](#usage)
   - [API Endpoints](#api-endpoints)
+  - [API Documentation](#api-documentation)
   - [Webhooks](#webhooks)
+    - [Webhook Endpoints](#webhook-endpoints)
+    - [Setting up with ngrok](#setting-up-with-ngrok)
   - [Contributing](#contributing)
 
 ## Installation
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/yourrepository.git
-    ```
-2. Install dependencies:
-    ```bash
-    npm install
-    ```
-3. Create a `.env` file and populate it with the necessary environment variables (see `.env.example` for reference).
+```bash
+git clone https://github.com/officialsamtech/gig-economy-payment-app.git
+npm install
+```
 
-4. Run the application:
-    ```bash
-    npm run dev
-    ```
+Create a `.env` file and populate it with the necessary environment variables (see `.env.example` for reference).
+
+Run the application:
+
+```bash
+npm run dev
+```
 
 ## Usage
 
@@ -43,15 +44,37 @@ To interact with the API, you can use tools like Postman or CURL. The API is hos
 - **Create Payout**: `POST /api/payouts`
 - **Get Payout**: `GET /api/payouts/:id`
 - **Complete Payout**: `POST /api/payouts/complete/:id/:amount`
+- **List Payout Method Types**: `GET /api/payoutMethods?payout_currency`
+- **List Payout Method Required Fields**: `GET /api/payouts/:payout_method_type/details`
 
+... (list all the endpoints)
 
+## API Documentation
+
+The API documentation is generated using OpenAPI and Swagger UI. It can be accessed at `http://localhost:5000/api-docs`.
 
 ## Webhooks
 
-The application uses webhooks to receive real-time updates from the Rapyd platform. To set up webhooks, follow the instructions in the [Rapyd documentation](https://docs.rapyd.net).
+### Webhook Endpoints
+
+- **Webhook Listener**: `POST /api/webhook`
+- **Get Webhook Events**: `GET /api/webhook/events`
+
+
+### Setting up with ngrok
+
+1. Download and install [ngrok](https://ngrok.com/).
+2. Run ngrok to expose your local server:
+    ```bash
+    ngrok http 5000
+    ```
+3. Copy the HTTPS URL provided by ngrok.
+4. Go to the [Rapyd dashboard](https://dashboard.rapyd.net/developers/webhooks/management) and set the webhook URL to the ngrok HTTPS URL.
+5. Select these events under Rapyd Disburse: ![Select Events](https://i.imgur.com/3YBC0eg.png)
+
+For more details, follow the instructions in the [Rapyd documentation on defining a Webhook endpoint](https://docs.rapyd.net/en/defining-a-webhook-endpoint.html).
 
 
 ## Contributing
 
 If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
-
