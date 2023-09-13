@@ -1,4 +1,4 @@
-import { IsBoolean, IsString, IsObject, ValidateNested, IsNumber } from "class-validator";
+import { IsBoolean, IsString, IsObject, ValidateNested, IsNumber, IsDate, IsOptional } from "class-validator";
 import { Type } from "class-transformer";
 
 export class Payout {
@@ -41,4 +41,14 @@ export class Payout {
     @ValidateNested()
     @Type(() => Object)
     beneficiary: Record<string, any>;
+
+    // New fields for recurring payments
+    @IsString()
+    @IsOptional()
+    recurrenceFrequency: string;  // 'weekly', 'monthly', etc.
+
+    @IsDate()
+    @IsOptional()
+    @Type(() => Date)
+    nextPayoutDate: Date;  // The date for the next scheduled payout
 }

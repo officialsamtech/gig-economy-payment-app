@@ -7,9 +7,46 @@ import { Payout } from '@/models/payout';
 import { PayoutMethod } from '@/models/payoutMethod';
 import { PayoutMethodRequiredFieldsQuery } from '@/models/payoutMethodRequiredFields';
 import { CompletePayout } from '@/models/completePayout';
+import cron from 'node-cron';
 
+const inMemoryPayouts: Payout[] = [];
 @JsonController('/api')
 export class PayoutController {
+
+    constructor() {
+        this.initializeCronJob();
+    }
+
+    private initializeCronJob() {
+        cron.schedule('0 0 * * *', () => {
+            // Loop through inMemoryPayouts to find payouts that need to be processed
+            for (const payout of inMemoryPayouts) {
+                if (payout.nextPayoutDate && payout.recurrenceFrequency) {
+                    const now = new Date();
+                    if (now >= new Date(payout.nextPayoutDate)) {
+                        // Create a new payout based on the existing one
+                        const newPayout = { ...payout };
+
+                        // Update nextPayoutDate based on recurrenceFrequency
+                        const nextDate = new Date(payout.nextPayoutDate);
+                        if (payout.recurrenceFrequency === 'weekly') {
+                            nextDate.setDate(nextDate.getDate() + 7);
+                        } else if (payout.recurrenceFrequency === 'monthly') {
+                            nextDate.setMonth(nextDate.getMonth() + 1);
+                        }
+
+                        newPayout.nextPayoutDate = nextDate;
+
+                        // For demo purposes, you can log the payout
+                        console.log(`Creating a new recurring payout for ${newPayout.beneficiary_country}`);
+
+                        // Add the new payout to inMemoryPayouts
+                        inMemoryPayouts.push(newPayout);
+                    }
+                }
+            }
+        });
+    }
 
     @Get('/payouts')
     @OpenAPI({ summary: 'Return a list of payouts' })
@@ -28,6 +65,15 @@ export class PayoutController {
     async createPayout(@Body() body: any) {
         const rapydService = new RapydService();
         const payout = await rapydService.createPayout(body);
+
+        // Simulate saving to in-memory storage for demo
+        if (body.recurrenceFrequency) {
+            payout.recurrenceFrequency = body.recurrenceFrequency;
+        }
+        if (body.nextPayoutDate) {
+            payout.nextPayoutDate = body.nextPayoutDate;
+        }
+        inMemoryPayouts.push(payout);
         return payout;
     }
 
@@ -91,4 +137,5 @@ export class PayoutController {
         const payout = await rapydService.cancelPayout(payoutId);
         return payout;
     }
+
 }
