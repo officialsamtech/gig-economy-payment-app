@@ -17,7 +17,7 @@ export const init = () => {
                 console.error("Could not create users table", err);
             }
         });
-        db.run("CREATE TABLE IF NOT EXISTS profiles (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER, name TEXT, email TEXT)", (err) => {
+        db.run("CREATE TABLE IF NOT EXISTS profiles (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER, first_name TEXT, last_name TEXT, email TEXT, FOREIGN KEY(user_id) REFERENCES users(id))", (err) => {
             if (err) {
                 console.error("Could not create profiles table", err);
             }
