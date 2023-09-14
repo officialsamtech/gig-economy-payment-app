@@ -26,7 +26,7 @@ export const signin = async (username: string, password: string): Promise<{ id: 
 export const generateToken = (userId: number) => {
     const secretKey = process.env.JWT_SECRET || 'your-secret-key';  // It's better to store the secret key in an environment variable
     const token = jwt.sign({ id: userId }, secretKey, {
-        expiresIn: '72h'  // Token will expire in 3 Days
+        expiresIn: '1h'  // Token will expire in 1hour
     });
     return token;
 };

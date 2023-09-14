@@ -59,9 +59,9 @@ npm run dev
 
 ### Authentication
 
-- **Sign Up**: `POST /api/signup`
-- **Sign In**: `POST /api/signin`
-- **Logout**: `POST /api/logout`
+- **Sign Up**: `POST /api/auth/signup`
+- **Sign In**: `POST /api/auth/signin`
+- **Logout**: `POST /api/auth/logout`
 
 ### Profile
 
