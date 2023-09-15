@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { signup } from '@/utils/api';
 import router from 'next/router';
+import Link from 'next/link';
 
 type SignupFormData = {
     username: string;
@@ -21,8 +22,8 @@ const SignupForm = (): JSX.Element => {
         try {
             const result = await signup(data.username, data.password);  // Make sure to await here
             if (result.user && result.token) {
-                // Navigate to dashboard or show a success message
-                router.push('/dashboard');
+                // Navigate to signin or show a success message
+                router.push('/auth/signin');
             } else {
                 setApiError(result.message || 'An error occurred from API');
             }
@@ -34,23 +35,25 @@ const SignupForm = (): JSX.Element => {
     };
 
     return (
-        <form className='flex max-w-md flex-col mx-auto gap-4 place-content-center h-screen' onSubmit={handleSubmit(onSubmit)}>
-            <label htmlFor="username" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+        <form className='flex max-w-md flex-col mx-auto gap-4 place-content-center' onSubmit={handleSubmit(onSubmit)}>
+            {/* Register */}
+
+            <label htmlFor="username" className="block mb-2 text-sm font-medium text-gray-900">
                 Username
                 <input
                     type="text"
                     {...register("username", { required: true })}
-                    className='g-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+                    className='g-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 '
                 />
             </label>
             {errors.username && <p>Username is required</p>}
 
-            <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+            <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-90">
                 Password
                 <input
                     type="password"
                     {...register("password", { required: true })}
-                    className='g-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+                    className='g-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 '
                 />
             </label>
             {errors.password && <p>Password is required</p>}
@@ -63,6 +66,15 @@ const SignupForm = (): JSX.Element => {
             >
                 {loading ? 'Signing Up...' : 'Sign Up'}
             </button>
+            {/* Already have an account, sign in */}
+            <div className="flex justify-center mt-4">
+                <p className="text-sm font-medium text-gray-900 ">
+                    Already have an account?{' '}
+                    <Link href="/login" className="text-blue-700 hover:text-blue-800 ">
+                        Sign in
+                    </Link>
+                </p>
+            </div>
         </form>
     );
 };

@@ -6,12 +6,11 @@ import * as profileService from '../services/profileService';
 
 const router = express.Router();
 
-// Create a new profile
 router.post('/', verifyToken, async (req, res) => {
-    try {
-        const { first_name, last_name, email } = req.body;
-        const user_id = req.userId; // Assuming req.userId is set by verifyToken middleware
+    const { first_name, last_name, email } = req.body;
+    const user_id = req.userId;
 
+    try {
         const newProfileId = await profileService.createProfile(user_id, first_name, last_name, email);
         res.status(201).json({ id: newProfileId, message: 'Profile created successfully' });
     } catch (error) {
@@ -22,13 +21,10 @@ router.post('/', verifyToken, async (req, res) => {
 
 // Get a profile by user ID
 router.get('/', verifyToken, async (req, res) => {
+    const user_id = req.userId;
+
     try {
-        const user_id = req.userId;
-        console.log("Controller UserID:", user_id);
-
         const profile = await profileService.getProfileByUserId(user_id);
-        console.log("Controller Profile:", profile);
-
         if (profile) {
             res.json(profile);
         } else {

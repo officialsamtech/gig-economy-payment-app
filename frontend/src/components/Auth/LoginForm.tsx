@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { signin } from '@/utils/api';
 import router from 'next/router';
+import Link from 'next/link';
 
 type LoginFormData = {
     username: string;
@@ -22,9 +23,9 @@ const LoginForm = (): JSX.Element => {
             const result = await signin(data.username, data.password);  // Make sure to await here
             if (result.user && result.token) {
                 // Navigate to dashboard or show a success message
-                router.push('/dashboard');
+                router.push('/profile');
             } else {
-                setApiError(result.message || 'An error occurred from API');
+                setApiError(result.message || 'Username/password is incorrect');
             }
         } catch (error) {
             setApiError('An error occurred from somewhere else');
@@ -33,7 +34,7 @@ const LoginForm = (): JSX.Element => {
         }
     };
     return (
-        <form className='flex max-w-md flex-col mx-auto gap-4 place-content-center h-screen' onSubmit={handleSubmit(onSubmit)}>
+        <form className='flex max-w-md flex-col mx-auto gap-4 place-content-center' onSubmit={handleSubmit(onSubmit)}>
             <label htmlFor="username" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                 Username
                 <input
@@ -42,7 +43,7 @@ const LoginForm = (): JSX.Element => {
                     className='g-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
                 />
             </label>
-            {errors.username && <p>Username is required</p>}
+            {errors.username && <small className="text-red-500 text-sm">Username is required</small>}
 
             <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                 Password
@@ -52,9 +53,9 @@ const LoginForm = (): JSX.Element => {
                     className='g-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
                 />
             </label>
-            {errors.password && <p>Password is required</p>}
+            {errors.password && <small className="text-red-500 text-sm">Password is required</small>}
 
-            {apiError && <p className="text-red-500 text-2xl">{apiError}</p>}
+            {apiError && <small className="text-red-500 text-sm">{apiError}</small>}
 
             <button
                 type="submit"
@@ -62,6 +63,10 @@ const LoginForm = (): JSX.Element => {
             >
                 {loading ? 'Signing In...' : 'Log In'}
             </button>
+            {/* Haven't registered? Create an account */}
+            <p className="text-center text-gray-500 text-sm">
+                Haven't registered? <Link href="/auth/signup" className="text-blue-700 hover:text-blue-800">Create an account</Link>
+            </p>
         </form>
     );
 };
