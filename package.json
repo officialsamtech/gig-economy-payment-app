@@ -1,0 +1,26 @@
+{
+    "name": "gig-economy-payment-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "backend": "cd backend && npm run dev",
+      "frontend": "cd frontend && npm run dev",
+      "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/officialsamtech/gig-economy-payment-app.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/officialsamtech/gig-economy-payment-app/issues"
+    },
+    "homepage": "https://github.com/officialsamtech/gig-economy-payment-app#readme",
+    "devDependencies": {
+      "concurrently": "^8.2.1"
+    }
+  }
+  
