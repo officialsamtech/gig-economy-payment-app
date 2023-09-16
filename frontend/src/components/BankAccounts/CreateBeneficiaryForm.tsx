@@ -32,6 +32,7 @@ const CreateBeneficiaryForm = () => {
             const response = await createBeneficiary(data);
             if (response.data) {
                 localStorage.setItem('beneficiaryId', response.data.id);
+
                 window.location.href = '/payment-methods';
             }
             console.log('Beneficiary created', response.data)

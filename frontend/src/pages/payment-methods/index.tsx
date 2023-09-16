@@ -4,6 +4,7 @@ import { getBeneficiary } from '@/utils/api';
 import { Main } from 'next/document';
 import MainLayout from '@/layouts/MainLayout';
 
+
 type BeneficiaryResponse = {
     id: number,
     currency: string,
@@ -16,6 +17,7 @@ type BeneficiaryResponse = {
 
 const BankAccount = () => {
     const [beneficiary, setBeneficiary] = useState<BeneficiaryResponse | null>(null);
+    const [bankAccount, setBankAccount] = useState(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {

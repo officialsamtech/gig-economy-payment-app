@@ -77,6 +77,7 @@ export const createBeneficiary = async (data: any) => {
 };
 
 
+
 export const logout = () => {
     localStorage.removeItem('token');  // Remove the token
     localStorage.removeItem('userId');
