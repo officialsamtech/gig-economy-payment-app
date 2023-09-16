@@ -1,6 +1,4 @@
-// pages/profile.tsx
-import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import { getProfile } from '@/utils/api'
 import MainLayout from '@/layouts/MainLayout';
 import CreateProfileForm from '@/components/Profile/CreateProfileForm';
@@ -25,7 +23,7 @@ const Profile = () => {
 
 
     return (
-        <MainLayout>
+        <MainLayout title='Profile'>
             <div>
                 {profile && (profile.first_name || profile.last_name || profile.email) ? (
                     <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

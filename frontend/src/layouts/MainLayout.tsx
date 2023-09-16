@@ -2,9 +2,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { logout } from "@/utils/api";
 
-interface LayoutComponentProps {
-    children: React.ReactNode,
-}
 
 interface NavListItem {
     label: string;
@@ -14,6 +11,7 @@ interface NavListItem {
 }
 
 type MainLayoutProps = {
+    title: string;
     children: React.ReactNode;
 };
 
@@ -25,13 +23,13 @@ const handleLogout = () => {
 
 const NavListItems: NavListItem[] = [
     { label: 'Your Profile', icon: '/assets/profile.svg', href: '/profile' },
-    { label: 'Request Payment', icon: '/assets/repayment.svg', href: '/request-payment' },
+    { label: 'Request Payment', icon: '/assets/repayment.svg', href: '/request-payments' },
     { label: 'Payments', icon: '/assets/payment.svg', href: '/payments' },
-    { label: 'Bank Accounts', icon: '/assets/bank.svg', href: '/bank-accounts' },
+    { label: 'Bank Accounts', icon: '/assets/bank.svg', href: '/payment-methods' },
 ]
 
 
-const MainLayout = ({ children }: MainLayoutProps): JSX.Element => {
+const MainLayout = ({ title, children }: MainLayoutProps): JSX.Element => {
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
     return (
@@ -52,7 +50,7 @@ const MainLayout = ({ children }: MainLayoutProps): JSX.Element => {
                     </button>
                 </div>
                 <div className="px-12 py-8">
-                    <h3 className="text-[20px] font-semibold leading-6 text-ms-black"> Dashboard </h3>
+                    <h3 className="text-[20px] font-semibold leading-6 text-ms-black"> {title} </h3>
                 </div>
             </nav>
 
