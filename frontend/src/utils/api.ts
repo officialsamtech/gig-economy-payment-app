@@ -58,8 +58,28 @@ export const createProfile = async (userId: number, first_name: string, last_nam
     return await response.json();
 };
 
+export const getBeneficiary = async (beneficiaryId: string) => {
+    const response = await fetch(`${baseURL}/api/beneficiaries/${beneficiaryId}`);
+    return await response.json();
+};
+
+// Create a new beneficiary
+export const createBeneficiary = async (data: any) => {
+    const response = await fetch(`${baseURL}/api/beneficiaries`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    });
+    console.log(response);
+    return await response.json();
+};
+
+
 export const logout = () => {
     localStorage.removeItem('token');  // Remove the token
     localStorage.removeItem('userId');
+    localStorage.removeItem('beneficiaryId');
 };
 
