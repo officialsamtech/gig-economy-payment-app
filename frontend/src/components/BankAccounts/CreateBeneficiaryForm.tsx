@@ -32,6 +32,9 @@ const CreateBeneficiaryForm = () => {
             const response = await createBeneficiary(data);
             if (response.data) {
                 localStorage.setItem('beneficiaryId', response.data.id);
+                localStorage.setItem('beneficiaryEntityType', response.data.entity_type);
+                localStorage.setItem('beneficiaryCountry', response.data.country);
+                localStorage.setItem('payoutCurrency', response.data.currency);
 
                 window.location.href = '/payment-methods';
             }

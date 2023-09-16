@@ -23,7 +23,7 @@ const handleLogout = () => {
 
 const NavListItems: NavListItem[] = [
     { label: 'Your Profile', icon: '/assets/profile.svg', href: '/profile' },
-    { label: 'Request Payment', icon: '/assets/repayment.svg', href: '/request-payment' },
+    { label: 'Request Payment', icon: '/assets/repayment.svg', href: '/request-payments' },
     { label: 'Payments', icon: '/assets/payment.svg', href: '/payments' },
     { label: 'Bank Accounts', icon: '/assets/bank.svg', href: '/payment-methods' },
 ]

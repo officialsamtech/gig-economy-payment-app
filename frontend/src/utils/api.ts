@@ -76,6 +76,27 @@ export const createBeneficiary = async (data: any) => {
     return await response.json();
 };
 
+export const getPaymentMethodType = async (payoutCurrency: string) => {
+    try {
+        const response = await fetch(`${baseURL}/api/payoutMethods?payout_currency=${payoutCurrency}`);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error("Failed to fetch payment method type", error);
+        return null;
+    }
+};
+
+export const getRequiredFields = async (payoutMethodType: string, payoutAmount: number, beneficiaryEntityType: string, beneficiaryCountry: string, payoutCurrency: string) => {
+    try {
+        const response = await fetch(`${baseURL}/api/payouts/${payoutMethodType}/details?sender_currency=USD&sender_entity_type=individual&beneficiary_entity_type=${beneficiaryEntityType}&sender_country=US&beneficiary_country=${beneficiaryCountry}&payout_currency=${payoutCurrency}&payout_amount=${payoutAmount}`);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error("Failed to fetch required fields", error);
+        return null;
+    }
+};
 
 
 export const logout = () => {
