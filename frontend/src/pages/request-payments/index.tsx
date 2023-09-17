@@ -5,7 +5,7 @@ const RequestPayments = () => {
     return (
         <MainLayout title="Request Payments">
             <div>
-                <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" >
+                <h3 className="mb-2 text-lg font-bold tracking-tight text-gray-900" >
                     Let the client know how much they should pay you
                 </h3>
 

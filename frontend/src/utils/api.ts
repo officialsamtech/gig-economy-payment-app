@@ -1,3 +1,5 @@
+import { data } from "autoprefixer";
+
 const baseURL = 'http://localhost:5000';
 
 export const signup = async (username: string, password: string) => {
@@ -76,6 +78,18 @@ export const createBeneficiary = async (data: any) => {
     return await response.json();
 };
 
+export const createPayout = async (data: any) => {
+    const response = await fetch(`${baseURL}/api/payouts`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    });
+    console.log(response);
+    return await response.json();
+};
+
 export const getPaymentMethodType = async (payoutCurrency: string) => {
     try {
         const response = await fetch(`${baseURL}/api/payoutMethods?payout_currency=${payoutCurrency}`);
@@ -97,6 +111,8 @@ export const getRequiredFields = async (payoutMethodType: string, payoutAmount: 
         return null;
     }
 };
+
+
 
 
 export const logout = () => {
