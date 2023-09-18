@@ -90,6 +90,17 @@ export const createPayout = async (data: any) => {
     return await response.json();
 };
 
+export const getPayouts = async () => {
+    try {
+        const response = await fetch(`${baseURL}/api/payouts`);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error("Failed to fetch payouts", error);
+        return null;
+    }
+}
+
 export const getPaymentMethodType = async (payoutCurrency: string) => {
     try {
         const response = await fetch(`${baseURL}/api/payoutMethods?payout_currency=${payoutCurrency}`);
