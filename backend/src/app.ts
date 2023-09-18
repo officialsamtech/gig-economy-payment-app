@@ -3,13 +3,17 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
-import { useExpressServer } from 'routing-controllers';
+import { useExpressServer, getMetadataArgsStorage } from 'routing-controllers';
+import { routingControllersToSpec } from 'routing-controllers-openapi';
+import { validationMetadatasToSchemas } from 'class-validator-jsonschema';
 import db, { init as dbInit } from './database';
 import authRoutes from './controllers/authController';
 import profileRoutes from './controllers/profileController';
 import { verifyToken } from './middlewares/authMiddleware';
 import errorMiddleware from './middlewares/error.middleware';
 import { logger, stream } from './utils/logger';
+import swaggerUi from 'swagger-ui-express';
+const { defaultMetadataStorage } = require('class-transformer/cjs/storage');
 
 // Initialize database
 dbInit();
@@ -25,6 +29,7 @@ class App {
         this.env = process.env.NODE_ENV || 'development';
 
         this.initializeMiddlewares();
+        this.initializeSwagger(Controllers);
         this.initializeRoutes(Controllers);
         this.initializeErrorHandling();
     }
@@ -56,6 +61,38 @@ class App {
             defaultErrorHandler: false,
         });
     }
+
+    private initializeSwagger(controllers: Function[]) {
+        const schemas = validationMetadatasToSchemas({
+            classTransformerMetadataStorage: defaultMetadataStorage,
+            refPointerPrefix: '#/components/schemas/',
+        });
+
+        const routingControllersOptions = {
+            controllers: controllers,
+        };
+
+        const storage = getMetadataArgsStorage();
+        const spec = routingControllersToSpec(storage, routingControllersOptions, {
+            components: {
+                schemas: schemas as any,
+                securitySchemes: {
+                    basicAuth: {
+                        scheme: 'basic',
+                        type: 'http',
+                    },
+                },
+            },
+            info: {
+                description: 'Generated with `routing-controllers-openapi`',
+                title: 'A sample-rapyd app API',
+                version: '1.0.0',
+            },
+        });
+
+        this.app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(spec));
+    }
+
 
     private initializeErrorHandling() {
         this.app.use(errorMiddleware);
