@@ -17,7 +17,6 @@ type BeneficiaryResponse = {
 
 const BankAccount = () => {
     const [beneficiary, setBeneficiary] = useState<BeneficiaryResponse | null>(null);
-    const [bankAccount, setBankAccount] = useState(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {

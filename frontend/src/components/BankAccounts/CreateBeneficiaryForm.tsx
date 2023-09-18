@@ -35,6 +35,15 @@ const CreateBeneficiaryForm = () => {
                 localStorage.setItem('beneficiaryEntityType', response.data.entity_type);
                 localStorage.setItem('beneficiaryCountry', response.data.country);
                 localStorage.setItem('payoutCurrency', response.data.currency);
+                localStorage.setItem('firstName', response.data.first_name);
+                localStorage.setItem('lastName', response.data.last_name);
+                localStorage.setItem('address', response.data.address);
+                localStorage.setItem('city', response.data.city);
+                localStorage.setItem('state', response.data.state);
+                localStorage.setItem('postcode', response.data.postcode);
+                localStorage.setItem('country', response.data.country);
+                localStorage.setItem('accountNumber', response.data.account_number);
+
 
                 window.location.href = '/payment-methods';
             }
