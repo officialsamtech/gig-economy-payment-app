@@ -1,7 +1,7 @@
 // profileController.ts
 
 import express from 'express';
-import { verifyToken } from '../middleware/authMiddleware';
+import { verifyToken } from '../middlewares/authMiddleware';
 import * as profileService from '../services/profileService';
 
 const router = express.Router();
